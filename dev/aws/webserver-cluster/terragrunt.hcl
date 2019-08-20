@@ -1,8 +1,8 @@
 # Terragrunt will copy the Terraform configurations specified by the source parameter, along with any files in the
 # working directory, into a temporary folder, and execute your Terraform commands in that folder.
 terraform {
-  #source = "git::git@github.com:stognera/terraformgrunt.git//modules//asg-elb-service?ref=v0.1.0"
-  source = "../../../modules//asg-elb-service"
+  source = "git::ssh://git@github.com/stognera/terraformgrunt.git//modules//asg-elb-service"
+  #source = "../../../modules//asg-elb-service"
 }
 
 # Include all settings from the root terragrunt.hcl file
