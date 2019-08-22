@@ -4,9 +4,9 @@ provider "azurerm" {
   #client_secret   = "${path_relative_to_include()}/terraform.tfstate"
   #tenant_id       = "${path_relative_to_include()}/terraform.tfstate"
   subscription_id =  var.subscription_id
-  #client_id       =  var.client_id
-  #client_secret   =  var.client_secret
-  #tenant_id       =  var.tenant_id
+  client_id       =  var.client_id
+  client_secret   =  var.client_secret
+  tenant_id       =  var.tenant_id
 }
 
 terraform {

@@ -18,8 +18,8 @@ inputs = {
   aws_profile                  = "non-prod"
   tfstate_global_bucket        = "terragrunt-adam-terraform-state-dev"
   tfstate_global_bucket_region = "us-east-1"
-  subscription_id              = "${path_relative_to_include()}/terraform.tfstate"
-  client_id                    = "${path_relative_to_include()}/terraform.tfstate"
-  client_secret                = "${path_relative_to_include()}/terraform.tfstate"
-  tenant_id                    = "${path_relative_to_include()}/terraform.tfstate"
+  subscription_id              = "${path_relative_to_include()}/terraform.tfvars"
+  client_id                    = "${path_relative_to_include()}/terraform.tfvars"
+  client_secret                = "${path_relative_to_include()}/terraform.tfvars"
+  tenant_id                    = "${path_relative_to_include()}/terraform.tfvars"
 }
