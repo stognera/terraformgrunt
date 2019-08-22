@@ -23,7 +23,7 @@ resource "azurerm_resource_group" "rg" {
 }
 
 resource "azurerm_storage_account" "stor" {
-  name                     = var.dns_name
+  name                     = var.storage_name
   location                 = var.location
   resource_group_name      = azurerm_resource_group.rg.name
   account_tier             = var.storage_account_tier
