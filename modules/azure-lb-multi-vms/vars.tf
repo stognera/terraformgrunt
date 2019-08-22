@@ -24,12 +24,11 @@ variable "tenant_id" {
   description = "The Azure tenant ID"
 }
 
-/*
 variable "location" {
   description = "The location/region where the virtual network is created. Changing this forces a new resource to be created."
   type        = string
 }
-
+/*
 variable "hostname" {
   description = "VM name referenced also in storage-related names."
 }

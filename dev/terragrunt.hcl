@@ -22,5 +22,4 @@ inputs = {
   client_id                    = "${path_relative_to_include()}/terraform.tfstate"
   client_secret                = "${path_relative_to_include()}/terraform.tfstate"
   tenant_id                    = "${path_relative_to_include()}/terraform.tfstate"
-  location                     = "${path_relative_to_include()}/terraform.tfstate"
 }
