@@ -80,6 +80,6 @@ variable "admin_username" {
   default     = "vmadmin"
 }
 
-variable "admin_password" {
-  description = "administrator password (recommended to disable password auth)"
-}
+#variable "admin_password" {
+#  description = "administrator password (recommended to disable password auth)"
+#}
