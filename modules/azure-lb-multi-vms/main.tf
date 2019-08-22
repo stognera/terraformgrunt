@@ -3,10 +3,10 @@ provider "azurerm" {
   #client_id       = "${path_relative_to_include()}/terraform.tfstate"
   #client_secret   = "${path_relative_to_include()}/terraform.tfstate"
   #tenant_id       = "${path_relative_to_include()}/terraform.tfstate"
-  #subscription_id = "${var.subscription_id}"
-  #client_id       = "${var.client_id}"
-  #client_secret   = "${var.client_secret}"
-  #tenant_id       = "${var.tenant_id}"
+  subscription_id = "${var.subscription_id}"
+  client_id       = "${var.client_id}"
+  client_secret   = "${var.client_secret}"
+  tenant_id       = "${var.tenant_id}"
 }
 
 terraform {
@@ -15,29 +15,6 @@ terraform {
 
   # The latest version of Terragrunt (v0.19.0 and above) requires Terraform 0.12.0 or above.
   required_version = ">= 0.12.0"
-}
-
-terraform {  
-  extra_arguments "conditional_vars" {
-    commands = [
-      "apply",
-      "plan",
-      "import",
-      "push",
-      "refresh"
-    ]
-
-    required_var_files = [
-      "${get_parent_terragrunt_dir()}/terraform.tfvars"
-    ]
-
-    #optional_var_files = [
-    #  "${get_parent_terragrunt_dir()}/${get_env("TF_VAR_env", "dev")}.tfvars",
-    #  "${get_parent_terragrunt_dir()}/${get_env("TF_VAR_region", "us-east-1")}.tfvars",
-    #  "${get_terragrunt_dir()}/${get_env("TF_VAR_env", "dev")}.tfvars",
-    #  "${get_terragrunt_dir()}/${get_env("TF_VAR_region", "us-east-1")}.tfvars"
-    #]
-  }
 }
 
 resource "azurerm_resource_group" "rg" {
