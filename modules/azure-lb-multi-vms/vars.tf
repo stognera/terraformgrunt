@@ -10,6 +10,22 @@ variable "rg_prefix" {
 
 variable "subscription_id" {
   description = "The Azure subscription ID"
+  type        = number
+}
+
+variable "client_id" {
+  description = "The Azure client ID"
+  type        = number
+}
+
+variable "client_secret" {
+  description = "The Azure client password"
+  type        = number
+}
+
+variable "tenant_id" {
+  description = "The Azure tenant ID"
+  type        = number
 }
 
 /*
