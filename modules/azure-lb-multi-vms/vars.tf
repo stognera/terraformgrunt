@@ -7,7 +7,7 @@ variable "rg_prefix" {
   description = "The shortened abbreviation to represent your resource group that will go on the front of some resources."
   default     = "rg"
 }
-
+/*
 variable "location" {
   description = "The location/region where the virtual network is created. Changing this forces a new resource to be created."
   type        = string
@@ -80,6 +80,6 @@ variable "admin_username" {
   default     = "vmadmin"
 }
 
-#variable "admin_password" {
-#  description = "administrator password (recommended to disable password auth)"
-#}
+variable "admin_password" {
+  description = "administrator password (recommended to disable password auth)"
+}*/
