@@ -1,6 +1,6 @@
 provider "azurerm" {
   #subscription_id = "${path_relative_to_include()}/terraform.tfstate"
-  client_id       = "${path_relative_to_include()}/terraform.tfstate"
+  client_id       = "${path_relative_to_include()}/terraform.tfvars"
   #client_secret   = "${path_relative_to_include()}/terraform.tfstate"
   #tenant_id       = "${path_relative_to_include()}/terraform.tfstate"
   subscription_id =  var.subscription_id
