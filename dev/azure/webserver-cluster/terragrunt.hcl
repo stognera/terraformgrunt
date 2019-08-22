@@ -14,5 +14,5 @@ include {
 inputs = {
   resource_group = "adam-test"
   location       = "East US"
-  dns_name       = "testdomain"
+  storage_name   = "test-storage"
 }
