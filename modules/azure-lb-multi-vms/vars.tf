@@ -35,7 +35,7 @@ variable "location" {
 #}
 
 variable "storage_name" {
-  description = "This is the name of the storage account"
+  description = "This is the name of the storage account name can only consist of lowercase letters and numbers, and must be between 3 and 24 characters long"
   type        = string
 }
 
