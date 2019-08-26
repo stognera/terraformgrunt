@@ -73,7 +73,6 @@ resource "azurerm_lb" "lb" {
   }
 }
 
-/*
 resource "azurerm_lb_backend_address_pool" "backend_pool" {
   resource_group_name = "${azurerm_resource_group.rg.name}"
   loadbalancer_id     = "${azurerm_lb.lb.id}"
@@ -91,6 +90,7 @@ resource "azurerm_lb_nat_rule" "tcp" {
   count                          = 2
 }
 
+/*
 resource "azurerm_lb_rule" "lb_rule" {
   resource_group_name            = "${azurerm_resource_group.rg.name}"
   loadbalancer_id                = "${azurerm_lb.lb.id}"
