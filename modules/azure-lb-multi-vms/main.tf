@@ -161,9 +161,9 @@ resource "azurerm_virtual_machine" "vm" {
 
   os_profile_windows_config {}
 
-  data "azurerm_public_ip" "lbpip" {
-    name                = "${azurerm_public_ip.lbpip.name}"
-    resource_group_name = "${azurerm_virtual_machine.vm.resource_group_name}"
-  }
+  #data "azurerm_public_ip" "lbpip" {
+  #  name                = "${azurerm_public_ip.lbpip.name}"
+  #  resource_group_name = "${azurerm_virtual_machine.vm.resource_group_name}"
+  #}
 
 }
