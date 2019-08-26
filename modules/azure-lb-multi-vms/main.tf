@@ -90,7 +90,6 @@ resource "azurerm_lb_nat_rule" "tcp" {
   count                          = 2
 }
 
-/*
 resource "azurerm_lb_rule" "lb_rule" {
   resource_group_name            = "${azurerm_resource_group.rg.name}"
   loadbalancer_id                = "${azurerm_lb.lb.id}"
@@ -131,6 +130,7 @@ resource "azurerm_network_interface" "nic" {
   }
 }
 
+/*
 resource "azurerm_virtual_machine" "vm" {
   name                  = "vm${count.index}"
   location              = "${var.location}"
