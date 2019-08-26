@@ -160,4 +160,4 @@ resource "azurerm_virtual_machine" "vm" {
   }
 
   os_profile_windows_config {}
-}*/
+}
