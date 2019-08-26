@@ -51,7 +51,12 @@ variable "storage_replication_type" {
 }
 
 variable "avset_name" {
-  description = "This is the name of the availability account, has to be unique to Azure, name can only consist of lowercase letters and numbers, and must be between 3 and 24 characters long"
+  description = "This is the name of the availability account."
+  type        = string
+}
+
+variable "lb_ip_dns_name" {
+  description = "DNS for Load Balancer IP"
   type        = string
 }
 
@@ -62,9 +67,7 @@ variable "hostname" {
 
 
 
-variable "lb_ip_dns_name" {
-  description = "DNS for Load Balancer IP"
-}
+
 
 variable "virtual_network_name" {
   description = "The name for the virtual network."
