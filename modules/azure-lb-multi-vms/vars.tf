@@ -75,29 +75,6 @@ variable "subnet_prefix" {
   default     = "10.0.10.0/24"
 }
 
-
-/*
-variable "hostname" {
-  description = "VM name referenced also in storage-related names."
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-variable "vm_size" {
-  description = "Specifies the size of the virtual machine."
-  default     = "Standard_D1_v2"
-}
-
 variable "image_publisher" {
   description = "name of the publisher of the image (az vm image list)"
   default     = "MicrosoftWindowsServer"
@@ -116,6 +93,15 @@ variable "image_sku" {
 variable "image_version" {
   description = "version of the image to apply (az vm image list)"
   default     = "latest"
+}
+
+variable "hostname" {
+  description = "VM name referenced also in storage-related names."
+}
+
+variable "vm_size" {
+  description = "Specifies the size of the virtual machine."
+  default     = "Standard_D1_v2"
 }
 
 variable "admin_username" {

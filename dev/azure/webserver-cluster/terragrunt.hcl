@@ -17,4 +17,5 @@ inputs = {
   storage_name   = "adam3teststorage"
   avset_name     = "adam-test"
   lb_ip_dns_name = "adam-test"
+  hostname       = "adam-test"
 }

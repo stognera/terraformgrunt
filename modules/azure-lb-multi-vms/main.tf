@@ -131,7 +131,7 @@ resource "azurerm_network_interface" "nic" {
   }
 }
 
-/*
+
 resource "azurerm_virtual_machine" "vm" {
   name                  = "vm${count.index}"
   location              = "${var.location}"
