@@ -14,5 +14,6 @@ include {
 inputs = {
   resource_group = "adam-test"
   location       = "East US"
-  storage_name   = "adamteststorage"
+  storage_name   = "adam3teststorage"
+  avset_name     = "adam-test"
 }

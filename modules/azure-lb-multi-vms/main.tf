@@ -30,16 +30,16 @@ resource "azurerm_storage_account" "stor" {
   account_replication_type = var.storage_replication_type
 }
 
-/*
 resource "azurerm_availability_set" "avset" {
-  name                         = "${var.dns_name}avset"
-  location                     = "${var.location}"
-  resource_group_name          = "${azurerm_resource_group.rg.name}"
+  name                         = var.avset_name
+  location                     = var.location
+  resource_group_name          = azurerm_resource_group.rg.name
   platform_fault_domain_count  = 2
   platform_update_domain_count = 2
   managed                      = true
 }
 
+/*
 resource "azurerm_public_ip" "lbpip" {
   name                = "${var.rg_prefix}-ip"
   location            = "${var.location}"

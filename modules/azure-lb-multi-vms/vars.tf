@@ -50,6 +50,11 @@ variable "storage_replication_type" {
   default     = "LRS"
 }
 
+variable "avset_name" {
+  description = "This is the name of the availability account, has to be unique to Azure, name can only consist of lowercase letters and numbers, and must be between 3 and 24 characters long"
+  type        = string
+}
+
 /*
 variable "hostname" {
   description = "VM name referenced also in storage-related names."
