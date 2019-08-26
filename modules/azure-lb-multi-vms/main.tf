@@ -160,4 +160,9 @@ resource "azurerm_virtual_machine" "vm" {
   }
 
   os_profile_windows_config {}
+
+  data "azurerm_public_ip" "vm" {
+  name                = "${azurerm_public_ip.vm.name}"
+  resource_group_name = "${azurerm_virtual_machine.vm.resource_group_name}"
+  }
 }
